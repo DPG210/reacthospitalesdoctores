@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Global from '../Global'
 
-
 export default class CreateHospital extends Component {
     url=Global.apiHospital;
 
@@ -36,7 +35,6 @@ export default class CreateHospital extends Component {
     state={
         mensaje:""
     }
-    
   render() {
     return (
       <div>
@@ -45,15 +43,15 @@ export default class CreateHospital extends Component {
             {this.state.mensaje}
         </h3>
         <form>
-            <label>Id Hospital</label>
+            <label>Id Hospital:</label>
             <input type='text' ref={this.cajaId} className='form-control'></input>
-            <label>Nombre</label>
+            <label>Nombre:</label>
             <input type='text' ref={this.cajaNombre} className='form-control'></input>
-            <label>Direccion</label>
+            <label>Direccion:</label>
             <input type='text' ref={this.cajaDireccion} className='form-control'></input>
-            <label>Telefono</label>
+            <label>Telefono:</label>
             <input type='text' ref={this.cajaTelefono} className='form-control'></input>
-            <label>Camas</label>
+            <label>Camas:</label>
             <input type='text' ref={this.cajaCamas} className='form-control'></input><br></br>
             <button className='btn btn-primary' onClick={this.insertHospital}>Nuevo Hospital</button>
         </form>
