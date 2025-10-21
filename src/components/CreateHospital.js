@@ -33,7 +33,6 @@ export default class CreateHospital extends Component {
             })
         })
     }
-
     state={
         mensaje:""
     }
